@@ -7995,12 +7995,12 @@ var options = document.querySelector(".options");
 app.querySelector(".close").onclick = onAppClose;
 
 options.onclick = function (e) {
-  _screenfull.default.enabled ? _screenfull.default.request() : undefined; //requestFullScreen API can only be initiated by a user gesture.
-
   if (e.target !== options) render(e.target.closest(".option").id);
 };
 
 function render(name) {
+  _screenfull.default.enabled ? _screenfull.default.request(app) : undefined; // API can only be initiated by a user gesture.
+
   renderTheme(name).then(function (content) {
     var container = app.querySelector(".content");
     container.innerHTML = content;
@@ -8086,7 +8086,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65250" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54239" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
