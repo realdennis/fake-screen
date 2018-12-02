@@ -9,4 +9,4 @@ module.exports=function(t){return fetch(t).then(function(t){return t.text()})};
 },{}],0:[function(require,module,exports) {
 var b=require("z1Am");b.register("html",require("cUwr"));b.load([["update.7cb51e72.html","AOSf"]]).then(function(){require("rFDk");});
 },{}]},{},[0], null)
-//# sourceMappingURL=/fake-screen/win10.fcfdf730.map
+//# sourceMappingURL=/fake-screen/win10.f97216f8.map
